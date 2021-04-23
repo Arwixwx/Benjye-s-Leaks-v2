@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Test page</title>
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+   </head>
+   <body>
+      <h1><span class="blue">&lt;</span>Combo<span class="blue">&gt;</span> <span class="yellow">Cloud</pan></h1>
+      <h2>Created with love by <a href="https://www.nulled.to/user/3797020-benjye" target="_blank"><span style="font-size: 14px; text-align: center; background: url('https://quantumcheats.netlify.app/i.imgur.com/zKyFN6f.gif'); color: #ff8000; font-weight: bold;">Benjye</span></a></h2>
+      <table class="container">
+         <thead>
+            <tr>
+               <th>
+                  <h1>Title</h1>
+               </th>
+               <th>
+                  <h1>Date</h1>
+               </th>
+               <th>
+                  <h1>Link</h1>
+               </th>
+            </tr>
+         </thead>
+         <tbody>
+             {% for title, date, link in list%}
+             <tr>
+                 <td>{{title}}</td>
+                 <td>{{date}}</td>
+                 <td><a href={{link}} style="display:block;" target="blank">Link</a></td>
+             </tr>
+             {%endfor%}
+         </tbody>
+      </table>
+   </body>
+</html>

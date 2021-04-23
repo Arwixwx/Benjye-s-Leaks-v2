@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Test page</title>
+      
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nav.css')}}">
+   </head>
+   <body>
+      <div class="container">
+         <h1>
+            <a href="#menu">Benjye the Plug</a>
+
+            <center><p>Created by <a href="https://www.nulled.to/user/3797020-benjye" target="_blank" style="font-size: 20px;">Benjye</a></p></center>
+            <br>
+            
+         </h1>
+            
+        <div class="popover" id="menu">
+         <div class = 'content'>
+          <a href="#" class="close"></a>
+           <div class = 'nav'>
+            <ul class = 'nav_list'>
+              
+              <div class = 'nav_list_item'>
+             <li><a href="#">Home</a></li>
+              </div>
+             <div class = 'nav_list_item'>
+              <li><a href="{{url_for('streaming')}}">Streaming</a></li>
+              </div>
+            <div class = 'nav_list_item'>
+             <li><a href="{{url_for('vpn')}}">VPN</a></li>
+              </div>
+            <div class = 'nav_list_item'>
+             <li><a href="{{url_for('gaming')}}">Gaming</a></li>
+              </div>
+             <div class = 'nav_list_item'>
+              <li><a href="{{url_for('music')}}">Music</a></li>
+              </div>
+              
+           </ul>
+          </div>
+         </div>
+         </div>
+         
+         </div>
+
+   </body>
+</html>
